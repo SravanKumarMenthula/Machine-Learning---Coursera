@@ -19,7 +19,7 @@ grad = zeros(size(theta));
 %
 % Note: grad should have the same dimensions as theta
 %
-%  dimensions:
+%  dimensions ( Just for good understanding)
 
 %  theta = n+1 * 1
 %  X =  m * n+1
