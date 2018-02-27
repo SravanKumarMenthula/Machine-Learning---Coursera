@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Created by Octave 4.2.1, Tue Feb 06 01:28:04 2018 GMT <unknown@unknown>
 # name: email
 # type: sq_string
@@ -13,3 +14,20 @@ sravan.menthula@gmail.com
 6VtQkVa7Obx9vwoo
 
 
+=======
+# Created by Octave 4.2.1, Tue Feb 06 01:28:04 2018 GMT <unknown@unknown>
+# name: email
+# type: sq_string
+# elements: 1
+# length: 25
+sravan.menthula@gmail.com
+
+
+# name: token
+# type: sq_string
+# elements: 1
+# length: 16
+6VtQkVa7Obx9vwoo
+
+
+>>>>>>> 75c439fc6087c66fc0a6f3ce692e85cd3b2c61ff
