@@ -14,25 +14,39 @@ p = zeros(size(X, 1), 1);
 % Instructions: Complete the following code to make predictions using
 %               your learned neural network. You should set p to a 
 %               vector containing labels between 1 to num_labels.
-%
+
 % Hint: The max function might come in useful. In particular, the max
 %       function can also return the index of the max element, for more
 %       information see 'help max'. If your examples are in rows, then, you
 %       can use max(A, [], 2) to obtain the max for each row.
 %
+	
+	
+%	a1 = [ones(m,1) X]; %by adding bias unit x0 to inout layer X (m*401)
+%	z2 = a1*Theta1';  % z1 = m*25
+	
 
+%	temp = sigmoid(z2);
+%	a2 = [ones(size(z2),1) temp]; % m*26
+	
+%	z3= a2*Theta2'; %m*10
+	
+%	a3 = sigmoid(z3); 
 
-	a1 = [ones(m,1) X];
+%	[val p]= max(a3,[],2)
 
-	z2 = a1*Theta1' ;  %( x*401 401*25   =  x*25)
+ a1 = [ones(m,1) X];
 
-	a2 = [ones(size(z2), 1) sigmoid(z2)];  %(x*26)
+ z2 = a1*Theta1' ;  %( x*401 401*25   =  x*25)
 
-	z3  = a2*Theta2';	  %(x*26 26*10  x * 10)
+ a2 = [ones(size(z2), 1) sigmoid(z2)];  %(x*26)
 
-	a3= sigmoid(z3);
+ z3  = a2*Theta2';	  %(x*26 26*10  x * 10)
 
-	[val p] = max(a3,[],2);
+ a3= sigmoid(z3);
+
+ [val p] = max(a3,[],2);
+
 
 
 
